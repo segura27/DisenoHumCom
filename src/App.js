@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header.jsx'
+import { Col } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <row>
+          <Col style={{ "height": "100vh", "backgroundColor": "lightGray" }} xs={4}>4</Col>
+          <Col xs={8}>8</Col>
+        </row>
+        <row></row>
+      </div>
+    </div >
   );
 }
-
 export default App;
