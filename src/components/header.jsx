@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 
 class Header extends Component {
     render() {
-        return <div><Navbar bg="light" expand="lg">
+        return <div><Navbar bg="light" expand="lg" className='flex-column'>
             <Navbar.Brand href="#home">
                 <img
                     alt=""

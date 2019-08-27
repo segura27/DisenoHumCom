@@ -1,19 +1,21 @@
-import React from 'react';
-import './App.css';
-import Header from './components/header.jsx'
-import { Col } from 'react-bootstrap';
+import React from 'react'
+import './App.css'
+import VerticalMenu from './components/verticalMenu.jsx'
+import Activities from './components/activities.jsx'
+import { Col, Row, Container } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <row>
-          <Col style={{ "height": "100vh", "backgroundColor": "lightGray" }} xs={4}>4</Col>
-          <Col xs={8}>8</Col>
-        </row>
-        <row></row>
-      </div>
-    </div >
-  );
+    <Container className='App' fluid="true" >
+      <Row style={{'height': '-webkit-fill-available'}}>
+        <Col style={{ width: '100%', backgroundColor: 'lightGray' }} sm={2}>
+          <Image src='./img/logomep.png' rounded width='30%' height='30%' />
+          <VerticalMenu key='verticalMenu' />
+        </Col>
+        <Activities />
+      </Row>
+    </Container>
+  )
 }
-export default App;
+export default App
