@@ -1,5 +1,6 @@
 import React from 'react'
-import { Col, Row, ButtonToolbar, Button } from 'react-bootstrap'
+import { Col, ButtonToolbar, Button, Container } from 'react-bootstrap'
+import Game from './game.jsx'
 
 export default class Activities extends React.Component {
   render() {
@@ -19,8 +20,10 @@ export default class Activities extends React.Component {
             <Button className='m-4' variant='success'>Sexto</Button>
           </ButtonToolbar>
         </div>
-      
-
+        <div className='mb-5 pb-5'>
+          Se realizara la actividad para el Tema: "TEMA" -subtema "SUBTEMA"
+        </div>
+          <Game />
 
 
 
