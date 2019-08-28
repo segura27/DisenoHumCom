@@ -10,13 +10,13 @@ export default class Game extends React.Component {
         <Image className="splash" src={gameImage} rounded />
         <div className="d-flex justify-content-center">
           <ButtonToolbar >
-            <Button className='m-4' variant='danger'onClick={() => this.setState({ showError: true })} >Wrong</Button>
-            <Button className='m-4' variant='success' onClick={() => this.setState({ show: true })}>Good</Button>
+            <Button className='m-4' variant='danger'onClick={() => this.setState({ showError: true })} >Equivocado</Button>
+            <Button className='m-4' variant='success' onClick={() => this.setState({ show: true })}>Correcto</Button>
           </ButtonToolbar>
         </div>
         <>
           <Alert show={this.state.show} variant="success">
-            <Alert.Heading>Correct!</Alert.Heading>
+            <Alert.Heading>Correcto!</Alert.Heading>
             <p>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
               lacinia odio sem nec elit. Cras mattis consectetur purus sit amet

@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     return (
       <Container className='App' fluid="true" >
         <Row>
-          <Col className="vertical-menu" sm={2}>
+          <Col className="vertical-menu" sm={3}>
             <Image className="logo" src='./img/logomep.png' rounded width='50%' height='12%' />
             <VerticalMenu {...this.props} key='verticalMenu' />
           </Col>

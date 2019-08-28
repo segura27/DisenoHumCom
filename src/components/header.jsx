@@ -6,7 +6,7 @@ class Header extends Component {
 
   render() {
     const { grade } = this.props.match.params
-    return <Col sm={10} className="header">
+    return <Col sm={9} className="header">
       <h1>Bienvenido a My Educational Site</h1>
       <br />
       {!grade ? <GradeChoose /> : (<>

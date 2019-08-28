@@ -54,7 +54,8 @@ export default class VerticalMenu extends React.Component {
               <Accordion defaultActiveKey={topic}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="0">
-                    {topic}
+                   {topic}
+                    
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
                     <Card.Link>{this.getSubtopics(topic)}</Card.Link>
