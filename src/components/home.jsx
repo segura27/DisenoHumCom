@@ -9,10 +9,10 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <Container className='App' fluid="true" >
-        <Row >
-          <Col style={{ width: '100%', backgroundColor: 'lightGray' }} sm={2}>
-            <Image src='./img/logomep.png' rounded width='30%' height='10%' />
+      <Container class="app-body" className='App' fluid="true" >
+        <Row>
+          <Col className="vertical-menu" sm={2}>
+            <Image className="logo" src='./img/logomep.png' rounded width='50%' height='12%' />
             <VerticalMenu key='verticalMenu' />
           </Col>
           <Activities />

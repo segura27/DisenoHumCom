@@ -1,0 +1,32 @@
+.App {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2em;    
+    background:#F6F6F6;
+    height: 100vh;
+}
+
+.vertical-menu {
+    border-right: #D4D7DD solid 0.075em;
+    border-bottom: #D4D7DD solid 0.075em;
+    padding-top: 1vh; 
+    padding-bottom: 2.5vh;
+    background: #EAE9E9;
+    border-bottom-right-radius:  2em;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+a {
+      color:black;
+       text-decoration: none;
+}
+
+.logo {
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+  }
