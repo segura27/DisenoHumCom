@@ -6,19 +6,33 @@ import Card from "react-bootstrap/Card";
 
 export default class VerticalMenu extends React.Component {
   state = {
-    topics: ['Historia', 'Geografía', 'Sociología', 'Formación Ciudadana'],
+    topics: ['Historia', 'Geografía', 'Sociología'],
     subTopics: {
-      Historia: ['h1', 'h2'], Geografía: ['g1', 'g2'],
-      Sociología: [], 'Formación Ciudadana': ['fc']
+      4: {
+        Historia: ['Definición y su importancia en la vida cotidiana de los Estudios Sociales'],
+        Geografía: ['Ubicación hemisférica y continental del país.', 'Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.', 'Climas de Costa Rica.'],
+        Sociología: ['Regiones socioeconómicas de Costa Rica: ubicación y características']
+      },
+      5: {
+        Historia: ['Etnias de Costa Rica: nombres y ubicación geográfica', 'Arte de los pueblos originarios de Costa Rica.', 'La diferenciación de clases según origen de sangre: criollos, mulatos,mestizo, pardo, etc'],
+        Geografía: [],
+        Sociología: ["Impactos culturales, demográficos y sociales de la conquista española", "El mestizaje en Costa Rica."]
+      },
+      6: {
+        Historia: ["La Campaña Nacional en la época de la independencia.", "Importancia de Juan Rafael Mora, Francisca Carrasco y Juan Santamaría como figuras emblemáticas", "Principales batallas y rutas de la Campaña Naciona… de la Vía del Tránsito (Combate de la Trinidad)."],
+        Geografía: [],
+        Sociología: ["Prevención del consumo de drogas: fortalecer nuestra identidad para la toma de decisiones.", "Medidas básicas para el manejo de las redes sociales", "Prevención y denuncia del cyberbullying y protecci… la integridad física y emocional del estudiante."]
+      }
     }
   }
 
   getSubtopics(topic) {
-    return this.state.subTopics[topic].map(st => {
+    const { grade } = this.props.match.params
+    return !grade ? [] : this.state.subTopics[grade][topic].map(st => {
       return (
-        <LinkContainer to={`/${topic}/${st}`}>
+        <LinkContainer key={topic + st +'l'} to={`/${grade}/${topic}/${st}`}>
           <Card
-            eventKey={topic + st}
+            eventkey={topic + st}
             key={topic + st}
             justify="true"
           >
@@ -36,7 +50,7 @@ export default class VerticalMenu extends React.Component {
         </Nav.Link>
         {this.state.topics.map(topic => {
           return (
-            <div>
+            <div key={topic}>
               <Accordion defaultActiveKey={topic}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="0">

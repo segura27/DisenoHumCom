@@ -10,7 +10,7 @@ import Information from './components/information.jsx'
 function App() {
   return (
     <Router>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/:grade(4|5|6)?" component={Home} />
       <Route exact path="/:grade(4|5|6)?/:topic" component={Topic} />
       <Route path="/:grade(4|5|6)?/:topic([^0-9]*)/:subTopic" component={Information} />
     </Router>

@@ -9,14 +9,14 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <Container class="app-body" className='App' fluid="true" >
+      <Container className='App' fluid="true" >
         <Row>
           <Col className="vertical-menu" sm={2}>
             <Image className="logo" src='./img/logomep.png' rounded width='50%' height='12%' />
-            <VerticalMenu key='verticalMenu' />
+            <VerticalMenu {...this.props} key='verticalMenu' />
           </Col>
 
-          <Header />
+          <Header {...this.props} />
         </Row>
         <Footer />
       </Container>

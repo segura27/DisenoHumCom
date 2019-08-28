@@ -1,12 +1,13 @@
 import React from 'react'
-import { ButtonToolbar, Button, Container, Alert } from 'react-bootstrap'
-
+import { ButtonToolbar, Button, Container, Alert, Image } from 'react-bootstrap'
+import gameImage from '../img/game.jpg'
 export default class Game extends React.Component {
   state = { show: false, showError:false }
   render() {
     return (
       <Container fluid='true'>
         <h1>GAME</h1>
+        <Image className="splash" src={gameImage} rounded />
         <div className="d-flex justify-content-center">
           <ButtonToolbar >
             <Button className='m-4' variant='danger'onClick={() => this.setState({ showError: true })} >Wrong</Button>

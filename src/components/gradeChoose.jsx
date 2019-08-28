@@ -7,21 +7,22 @@ import {
 class GradeChoose extends React.Component {
   render() {
     const { topic } = this.props 
+    const url = topic ? `${topic}/` : '';
     return (
       <div>
-        <h3>Elige tu nivel para poder comenzar a JUGAR !!</h3>
+        <h3>Elige tu nivel para poder comenzar !!</h3>
 
         <br />
         <div className="d-flex justify-content-center">
           <ButtonToolbar >
           <Button className='m-4' onClick={() => {
-              this.props.history.push( `/4/${topic}/`);
+              this.props.history.push( `/4/${url}`);
             }} variant='primary'>Cuarto</Button>
             <Button className='m-4'onClick={() => {
-              this.props.history.push(`/5/${topic}/`);
+              this.props.history.push(`/5/${url}`);
             }} variant='secondary'>Quinto</Button>
             <Button className='m-4' onClick={() => {
-              this.props.history.push(`/6/${topic}/`);
+              this.props.history.push(`/6/${url}`);
             }}variant='success'>Sexto</Button>
           </ButtonToolbar>
         </div>
