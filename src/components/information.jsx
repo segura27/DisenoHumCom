@@ -8,13 +8,13 @@ import Footer from './footer.jsx'
 export default class Information extends React.Component {
   state = {
     content: {
-      4: [{ name: "Definición y su importancia en la vida cotidiana de los Estudios Sociales", body: "body for h1", image: "map.jpg" },
-      { name: "Ubicación hemisférica y continental del país.", body: "body for h1", image: "map.jpg" }, { name: "Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.", body: "body for h1", image: "map.jpg" }, { name: "Climas de Costa Rica.", body: "body for h1", image: "map.jpg" },
+      4: [{ name: "Definición y su importancia en la vida cotidiana de los Estudios Sociales", body: "body for h1", image: "social_studies.jfif" },
+      { name: "Ubicación hemisférica y continental del país.", body: "body for h1", image: "map.jpg" }, { name: "Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.", body: "body for h1", image: "map.jpg" }, { name: "Climas de Costa Rica.", body: "body for h1", image: "climate.jpg" },
       ],
-      5: [{ name: "Etnias de Costa Rica: nombres y ubicación geográfica", body: "body for h1", image: "map.jpg" }, { name: "Arte de los pueblos originarios de Costa Rica.", body: "body for h2", image: "ww2.jpg" }, { name: "La diferenciación de clases según origen de sangre: criollos, mulatos,mestizo, pardo, etc", body: "body for h2", image: "ww2.jpg" },
-      { name: "Impactos culturales, demográficos y sociales de la conquista española", body: "body for h1", image: "map.jpg" }, { name: "El mestizaje en Costa Rica.", body: "body for h1", image: "map.jpg" }],
-      6: [{ name: "La Campaña Nacional en la época de la independencia.", body: "body for h1", image: "map.jpg" }, { name: "Importancia de Juan Rafael Mora, Francisca Carrasco y Juan Santamaría como figuras emblemáticas", body: "body for h2", image: "ww2.jpg" }, { name: "Principales batallas y rutas de la Campaña Nacional: Santa Rosa, Rivas, Sardinal y Toma de la Vía del Tránsito (Combate de la Trinidad).", body: "body for h1", image: "map.jpg" },
-      { name: "Prevención del consumo de drogas: fortalecer nuestra identidad para la toma de decisiones.", body: "body for h1", image: "map.jpg" }, { name: "Medidas básicas para el manejo de las redes sociales", body: "body for h1", image: "map.jpg" }, { name: "Prevención y denuncia del cyberbullying y protección de la integridad física y emocional del estudiante.", body: "body for h1", image: "map.jpg" }]
+      5: [{ name: "Etnias de Costa Rica: nombres y ubicación geográfica", body: "body for h1", image: "etnias.jfif" }, { name: "Arte de los pueblos originarios de Costa Rica.", body: "body for h2", image: "carreta.jfif" }, { name: "La diferenciación de clases según origen de sangre: criollos, mulatos,mestizo, pardo, etc", body: "body for h2", image: "mesti.jfif" },
+      { name: "Impactos culturales, demográficos y sociales de la conquista española", body: "body for h1", image: "map.jpg" }, { name: "El mestizaje en Costa Rica.", body: "body for h1", image: "mesti.jfif" }],
+      6: [{ name: "La Campaña Nacional en la época de la independencia.", body: "body for h1", image: "indept.jfif" }, { name: "Importancia de Juan Rafael Mora, Francisca Carrasco y Juan Santamaría como figuras emblemáticas", body: "body for h2", image: "juan.jfif" }, { name: "Principales batallas y rutas de la Campaña Nacional: Santa Rosa, Rivas, Sardinal y Toma de la Vía del Tránsito (Combate de la Trinidad).", body: "body for h1", image: "rivsas.jfif" },
+      { name: "Prevención del consumo de drogas: fortalecer nuestra identidad para la toma de decisiones.", body: "body for h1", image: "drogas.jfif" }, { name: "Medidas básicas para el manejo de las redes sociales", body: "body for h1", image: "map.jpg" }, { name: "Prevención y denuncia del cyberbullying y protección de la integridad física y emocional del estudiante.", body: "body for h1", image: "map.jpg" }]
     },
     lorem: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`
   }
@@ -61,9 +61,9 @@ export default class Information extends React.Component {
               <Footer fix />
             </Row>
           </div>
-            )
-          }
-      </Container >
           )
         }
-        }
+      </Container >
+    )
+  }
+}
