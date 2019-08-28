@@ -6,7 +6,7 @@ export default class Game extends React.Component {
   render() {
     return (
       <Container fluid='true'>
-        <h1>GAME</h1>
+        <h1>Juego</h1>
         <Image className="splash" src={gameImage} rounded />
         <div className="d-flex justify-content-center">
           <ButtonToolbar >
