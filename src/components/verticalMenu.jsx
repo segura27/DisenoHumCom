@@ -10,7 +10,7 @@ export default class VerticalMenu extends React.Component {
   getSubtopics(topic) {
     return this.state.subTopics[topic].map(st => {
       return (
-        <Nav.Link eventKey={topic + st} key={topic + st} justify='true'>
+        <Nav.Link eventKey={topic + st} href={`/${topic}/${st}`} key={topic + st} justify='true'>
           -- {st}
         </Nav.Link>
       )
@@ -19,13 +19,13 @@ export default class VerticalMenu extends React.Component {
   render() {
     return (
       <Nav defaultActiveKey='/home' variant='tabs' className=' justify-content-end flex-column mt-5'>
-        <Nav.Link eventKey='educationalSite' key='educationalSite'>
+        <Nav.Link eventKey='educationalSite' href="/" key='educationalSite'>
           My Educational Site
         </Nav.Link>
         {this.state.topics.map(topic => {
           return (
             <div>
-              <Nav.Link eventKey={topic} href="/about" key={topic} justify='true'>
+              <Nav.Link eventKey={topic} href={'/'+topic} key={topic} justify='true'>
                 {topic}
               </Nav.Link>
               {this.getSubtopics(topic)}

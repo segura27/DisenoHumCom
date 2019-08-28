@@ -1,20 +1,29 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
+import image from "../img/logomep.png"
+import {
+  withRouter
+} from 'react-router-dom'
 
-export default class TopicCard extends React.Component {
-  state = { show: false, showError: false }
+
+class TopicCard extends React.Component {
   render() {
+    const { url, tittle,body } = this.props
     return (
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src={image} />
         <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Title>{tittle}</Card.Title>
           <Card.Text>
-            {this.props.body}
-    </Card.Text>
-          <Button variant="primary">Mas informacion</Button>
+            {body}
+          </Card.Text>
+          <Button onClick={() => {
+            this.props.history.push(url)
+          }} variant="primary">Mas informacion</Button>
         </Card.Body>
       </Card>
     )
   }
 }
+
+export default withRouter(TopicCard)
