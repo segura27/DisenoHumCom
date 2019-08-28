@@ -8,7 +8,7 @@ import Footer from './footer.jsx'
 export default class Information extends React.Component {
   state = {
     content: {
-      4: [{ name: "Definición y su importancia en la vida cotidiana de los Estudios Sociales", body: "body for h1", image: "social_studies.jfif" },
+      4: [{ name: "Definición y su importancia en la vida cotidiana de los Estudios Sociales", body: "body for h1", image: "social_studies.jfif" },{ name: "Regiones socioeconómicas de Costa Rica: ubicación y características", body: "body for h1", image: "social_studies.jfif" },
       { name: "Ubicación hemisférica y continental del país.", body: "body for h1", image: "map.jpg" }, { name: "Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.", body: "body for h1", image: "map.jpg" }, { name: "Climas de Costa Rica.", body: "body for h1", image: "climate.jpg" },
       ],
       5: [{ name: "Etnias de Costa Rica: nombres y ubicación geográfica", body: "body for h1", image: "etnias.jfif" }, { name: "Arte de los pueblos originarios de Costa Rica.", body: "body for h2", image: "carreta.jfif" }, { name: "La diferenciación de clases según origen de sangre: criollos, mulatos,mestizo, pardo, etc", body: "body for h2", image: "mesti.jfif" },
