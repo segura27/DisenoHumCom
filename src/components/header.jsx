@@ -1,40 +1,14 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Col, Image, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
 class Header extends Component {
     render() {
-        return <div><Navbar bg="light" expand="lg" className='flex-column'>
-            <Navbar.Brand href="#home">
-                <img
-                    alt=""
-                    src="./img/logomep.png"
-                    width="80vw"
-                    height="50vh"
-                    className="d-inline-block align-top"
-                />
-
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Página Principal</Nav.Link>
-                    <Nav.Link href="#link">Tema 1</Nav.Link>
-                    <NavDropdown title="Tema 2" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/2.1">SubTema 2.1</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/2.2">SubTema 2.2</NavDropdown.Item>
-                    </NavDropdown>
-                    <NavDropdown title="Tema 3" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">SubTema 3.1</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">SubTema 2.2</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Búsqueda rápida" className="mr-sm-2" />
-                    <Button variant="outline-success">Buscar</Button>
-                </Form>
-            </Navbar.Collapse>
-        </Navbar>
-        </div>
+        return <Col sm={10} className="header">
+            <h1>Bienvenido a My Educational Site</h1>
+            <br />
+            <Image className="splash" src='./img/splash.jpg' rounded />
+            <p sm={4}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        </Col>
     }
 }
 export default Header;

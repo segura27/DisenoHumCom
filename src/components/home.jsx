@@ -4,6 +4,7 @@ import Activities from './activities.jsx'
 import Footer from './footer.jsx'
 import { Col, Row, Container } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
+import Header from './header.jsx';
 
 export default class Home extends React.Component {
 
@@ -15,7 +16,8 @@ export default class Home extends React.Component {
             <Image className="logo" src='./img/logomep.png' rounded width='50%' height='12%' />
             <VerticalMenu key='verticalMenu' />
           </Col>
-          <Activities />
+
+          <Header />
         </Row>
         <Footer />
       </Container>
