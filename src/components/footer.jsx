@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
 
         <div className="footer-copyright text-center py-3 mr-5">
           © Todos los derechos reservados 2019
-           MEP Costa Rica.             
+          Spectry.
            <a href='/ayuda' target="_blank" className='ml-5'> Ayuda</a>
         </div>
       
