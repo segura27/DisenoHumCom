@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css'
+import './css/styles.css'
+
 import Topic from './components/topic.jsx'
 import Home from './components/home.jsx'
 import Information from './components/information.jsx'
