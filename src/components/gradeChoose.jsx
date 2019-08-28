@@ -20,7 +20,7 @@ class GradeChoose extends React.Component {
             }} variant='primary'>Cuarto</Button>
             <Button className='m-4'onClick={() => {
               this.props.history.push(`/5/${url}`);
-            }} variant='secondary'>Quinto</Button>
+            }} variant='warning'>Quinto</Button>
             <Button className='m-4' onClick={() => {
               this.props.history.push(`/6/${url}`);
             }}variant='success'>Sexto</Button>

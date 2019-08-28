@@ -6,11 +6,12 @@ export default class Footer extends React.Component {
     return (
       <footer className="page-footer font-small blue">
 
-        <div className="footer-copyright text-center py-3">
+        <div className="footer-copyright text-center py-3 mr-5">
           © Todos los derechos reservados 2019
-           MEP Costa Rica.
+           MEP Costa Rica.             
+           <a href='/ayuda' target="_blank" className='ml-5'> Ayuda</a>
         </div>
-
+      
       </footer>
     )
   }
