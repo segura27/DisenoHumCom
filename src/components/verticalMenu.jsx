@@ -19,9 +19,9 @@ export default class VerticalMenu extends React.Component {
         Sociología: ["Impactos culturales, demográficos y sociales de la conquista española", "El mestizaje en Costa Rica."]
       },
       6: {
-        Historia: ["La Campaña Nacional en la época de la independencia.", "Importancia de Juan Rafael Mora, Francisca Carrasco y Juan Santamaría como figuras emblemáticas", "Principales batallas y rutas de la Campaña Naciona… de la Vía del Tránsito (Combate de la Trinidad)."],
+        Historia: ["La Campaña Nacional en la época de la independencia.", "Importancia de Juan Rafael Mora, Francisca Carrasco y Juan Santamaría como figuras emblemáticas", "Principales batallas y rutas de la Campaña Nacional: Santa Rosa, Rivas, Sardinal y Toma de la Vía del Tránsito (Combate de la Trinidad)."],
         Geografía: [],
-        Sociología: ["Prevención del consumo de drogas: fortalecer nuestra identidad para la toma de decisiones.", "Medidas básicas para el manejo de las redes sociales", "Prevención y denuncia del cyberbullying y protecci… la integridad física y emocional del estudiante."]
+        Sociología: ["Prevención del consumo de drogas: fortalecer nuestra identidad para la toma de decisiones.", "Medidas básicas para el manejo de las redes sociales", "Prevención y denuncia del cyberbullying y protección de la integridad física y emocional del estudiante."]
       }
     }
   }
