@@ -2,6 +2,7 @@ import React from 'react'
 import TopicCard from './card.jsx';
 import { Col, Row, Container, Breadcrumb } from 'react-bootstrap'
 import GradeChoose from './gradeChoose.jsx';
+import Footer from './footer.jsx'
 
 export default class Topic extends React.Component {
   state = {
@@ -37,9 +38,12 @@ export default class Topic extends React.Component {
         <h1>Subtemas de {topic} </h1>
         <br/>
         {!grade ? <GradeChoose topic={topic} /> :
-          (<Row>
+          (<><Row>
             {this.state.subTopics[grade][topic].map(st => <Col className="m-4" key={st.name}><TopicCard tittle={st.name} body={st.body} url={`/${grade}/${topic}/${st.name}`} image={st.image}/></Col>)}
-          </Row>)}
+          </Row>
+            <Row>
+            <Footer/>
+          </Row></>)}
 
       </Container>
     )

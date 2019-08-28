@@ -3,12 +3,13 @@ import { Container, Breadcrumb, Row, Col, Image } from 'react-bootstrap'
 
 import GradeChoose from './gradeChoose.jsx'
 import Game from './game.jsx'
+import Footer from './footer.jsx'
 
 export default class Information extends React.Component {
   state = {
     content: {
       4: [{ name: "Definición y su importancia en la vida cotidiana de los Estudios Sociales", body: "body for h1", image: "map.jpg" },
-        { name: "Ubicación hemisférica y continental del país.", body: "body for h1", image: "map.jpg" }, { name: "Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.", body: "body for h1", image: "map.jpg" }, { name: "Climas de Costa Rica.", body: "body for h1", image: "map.jpg" },
+      { name: "Ubicación hemisférica y continental del país.", body: "body for h1", image: "map.jpg" }, { name: "Países vecinos de Costa Rica: construcción de lazos entre países centroamericanos.", body: "body for h1", image: "map.jpg" }, { name: "Climas de Costa Rica.", body: "body for h1", image: "map.jpg" },
       ],
       5: [{ name: "Etnias de Costa Rica: nombres y ubicación geográfica", body: "body for h1", image: "map.jpg" }, { name: "Arte de los pueblos originarios de Costa Rica.", body: "body for h2", image: "ww2.jpg" }, { name: "La diferenciación de clases según origen de sangre: criollos, mulatos,mestizo, pardo, etc", body: "body for h2", image: "ww2.jpg" },
       { name: "Impactos culturales, demográficos y sociales de la conquista española", body: "body for h1", image: "map.jpg" }, { name: "El mestizaje en Costa Rica.", body: "body for h1", image: "map.jpg" }],
@@ -51,15 +52,18 @@ export default class Information extends React.Component {
               </Col>
               <Col sm={4}> {this.state.image && <Image className="splash" src={this.state.image.default} rounded />}</Col>
             </Row>
-
-            <br />
-            <h2 className='mt-5 mb-5'>Pon a prueba lo aprendido con este juego:</h2>
-            <Game />
+            <Row>
+              <br />
+              <h2 className='mt-5 mb-5'>Pon a prueba lo aprendido con este juego:</h2>
+              <Game />
+            </Row>
+            <Row>
+              <Footer fix />
+            </Row>
           </div>
+            )
+          }
+      </Container >
           )
         }
-
-      </Container >
-    )
-  }
-}
+        }
