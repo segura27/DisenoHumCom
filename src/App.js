@@ -1,23 +1,15 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css'
-import VerticalMenu from './components/verticalMenu.jsx'
-import Activities from './components/activities.jsx'
-import Footer from './components/footer.jsx'
-import { Col, Row, Container } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image'
+import Topic from './components/topic.jsx'
+import Home from './components/home.jsx'
 
 function App() {
   return (
-    <Container className='App' fluid="true" >
-      <Row >
-        <Col style={{ width: '100%', backgroundColor: 'lightGray' }} sm={2}>
-          <Image src='./img/logomep.png' rounded width='30%' height='10%' />
-          <VerticalMenu key='verticalMenu' />
-        </Col>
-        <Activities />
-      </Row>
-      <Footer/>
-    </Container>
+    <Router>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={Topic} />
+    </Router>
   )
 }
 export default App

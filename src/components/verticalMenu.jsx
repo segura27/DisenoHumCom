@@ -25,7 +25,7 @@ export default class VerticalMenu extends React.Component {
         {this.state.topics.map(topic => {
           return (
             <div>
-              <Nav.Link eventKey={topic} key={topic} justify='true'>
+              <Nav.Link eventKey={topic} href="/about" key={topic} justify='true'>
                 {topic}
               </Nav.Link>
               {this.getSubtopics(topic)}
