@@ -1,5 +1,8 @@
 import React from 'react'
+import { LinkContainer } from "react-router-bootstrap";
 import Nav from 'react-bootstrap/Nav'
+import Accordion from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
 
 export default class VerticalMenu extends React.Component {
   state = {
@@ -13,9 +16,15 @@ export default class VerticalMenu extends React.Component {
   getSubtopics(topic) {
     return this.state.subTopics[topic].map(st => {
       return (
-        <Nav.Link eventKey={topic + st} href={`/${topic}/${st}`} key={topic + st} justify='true'>
-          -- {st}
-        </Nav.Link>
+        <LinkContainer to={`/${topic}/${st}`}>
+          <Card
+            eventKey={topic + st}
+            key={topic + st}
+            justify="true"
+          >
+            {st}
+          </Card>
+        </LinkContainer>
       )
     })
   }
@@ -28,10 +37,16 @@ export default class VerticalMenu extends React.Component {
         {this.state.topics.map(topic => {
           return (
             <div>
-              <Nav.Link eventKey={topic} href={'/'+topic} key={topic} justify='true'>
-                {topic}
-              </Nav.Link>
-              {this.getSubtopics(topic)}
+              <Accordion defaultActiveKey={topic}>
+                <Card>
+                  <Accordion.Toggle as={Card.Header} eventKey="0">
+                    {topic}
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey="0">
+                    <Card.Link>{this.getSubtopics(topic)}</Card.Link>
+                  </Accordion.Collapse>
+                </Card>
+              </Accordion>
             </div>
           )
         })}

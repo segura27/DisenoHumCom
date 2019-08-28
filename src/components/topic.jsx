@@ -21,7 +21,7 @@ export default class Topic extends React.Component {
         {topic}  ---- {grade}
         {!grade ? <GradeChoose topic={topic} /> :
           (<Row>
-            {this.state.subTopics[topic].map(st => <Col className="m-4" key={st}><TopicCard tittle={st} body={st + 'body'} url={`/${grade}/${topic}/${st}`} /></Col>)}
+            {this.state.subTopics[topic].map(st => <Col className="m-4" key={st}><TopicCard tittle={st} body={st + ' body'} url={`/${grade}/${topic}/${st}`} /></Col>)}
           </Row>)}
 
       </Container>
