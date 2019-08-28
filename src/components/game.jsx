@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, ButtonToolbar, Button, Container, Alert } from 'react-bootstrap'
+import { ButtonToolbar, Button, Container, Alert } from 'react-bootstrap'
 
 export default class Game extends React.Component {
   state = { show: false, showError:false }
