@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Image, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Col, Image} from 'react-bootstrap';
 
 class Header extends Component {
     render() {

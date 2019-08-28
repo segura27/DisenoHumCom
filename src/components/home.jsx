@@ -1,6 +1,5 @@
 import React from 'react'
 import VerticalMenu from './verticalMenu.jsx'
-import Activities from './activities.jsx'
 import Footer from './footer.jsx'
 import { Col, Row, Container } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'

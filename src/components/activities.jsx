@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, ButtonToolbar, Button, Container, Image } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 
 import Game from './game.jsx'
 
