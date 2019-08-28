@@ -5,6 +5,12 @@
     height: 100vh;
 }
 
+.header > p{
+    width: 45vw;
+    text-align: center;
+    margin: auto;
+}
+
 .vertical-menu {
     border-right: #D4D7DD solid 0.075em;
     border-bottom: #D4D7DD solid 0.075em;
@@ -12,6 +18,7 @@
     padding-bottom: 2.5vh;
     background: #EAE9E9;
     border-bottom-right-radius:  2em;
+    max-height: 65vh;
 }
 
 .page-footer {
@@ -29,4 +36,7 @@ a {
     max-height:95px;
     width: auto;
     height: auto;
+  }
+  .splash {
+      border-radius: 1.5em;
   }
